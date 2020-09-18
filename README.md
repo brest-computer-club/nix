@@ -8,7 +8,7 @@ create a file to set (for example) everything you need for your elm development,
 
 let 
   src = builtins.fetchGit {
-    url = "https://gitlab.com/brestcc/nix";
+    url = "https://github.com/brestcc/nix.git";
     ref = "master"; # or pin a specific commit, see https://nixos.org/manual/nix/stable/#builtin-fetchGit
   };
   altPkgs = import src pkgs; 
