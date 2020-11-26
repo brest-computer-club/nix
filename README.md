@@ -1,7 +1,8 @@
 # nix
 
 ## basic usage 
-create a file to set (for example) everything you need for your elm development, say : `elm-shell.nix`
+
+create a file to set (for example) everything you need for your elm development, say : `shell.nix`
 
 ```
 {pkgs ? import <nixpkgs> {}}:
@@ -24,5 +25,5 @@ pkgs.mkShell {
 
 start a shell with :
 ```
-nix-shell elm-shell.nix
+nix-shell
 ```
